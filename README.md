@@ -1,6 +1,6 @@
 # My project euler solutions in JS
 
-(Project Euler)[https://projecteuler.net/archives] is a set of math-related programming challenges that can be completed in your language of choice.
+[Project Euler](https://projecteuler.net/archives) is a set of math-related programming challenges that can be completed in your language of choice.
 
 I started this simply to become a better programmer and because I enjoy puzzles.
 
