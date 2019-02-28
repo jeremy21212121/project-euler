@@ -14,8 +14,8 @@ const highest = (() => {
  let longestChain = 2;
  let value= 2;
  for (let i=3;i<1000000;i++) {
-  let x = itSeq(i);
-  if (x.length>longestChain) {longestChain=x.length;value=i;}
+  let y = itSeq(i);
+  if (y.length>longestChain) {longestChain=y.length;value=i;}
  }
  return value;
 })();

@@ -24,20 +24,13 @@
 
 
 
-const tar = 20;
+const tar = 50;
 // size grid we need the number of solutions for
 
-const pt = [];
-
-for (let i=0;i<=(tar*2);i++) {pt.push([]);}
-//build the array for holding pascals triangle.
-
-pt[0][0]=1;
-// first value in pascals triangle
-
-
+const pt = [[1]];
 
 for (let n=1; n<=(tar*2);n++) {
+ pt.push([]);
  for (let k=0;k<=n;k++) {
   pt[n][k] = (pt[n-1][k-1] || 0) + (pt[n-1][k] || 0)
  }
@@ -48,4 +41,5 @@ let answer = pt[tar*2][tar];
 // by studying a small triangle, i figured out that the # of solutions for a X by X grid is located at position 2X,X. For example, given a 2x2 grid, the number of solutions can be found on row 4, column 2 (0-indexed).
 
 console.log(answer);
+
 
